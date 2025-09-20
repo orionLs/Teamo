@@ -40,12 +40,62 @@
 
     <body>
         <h1>Te amo</h1>
-        <input type="button" value="Te odio" />
+        <button id="teodio">Te odio </button>
+        <style>
+        #teodio {
+          background-color: #393939;  /* gris oscuro */
+          color: #ffffff;            /* texto blanco */
+          padding: 10px 18px;
+          border: none;
+          border-radius: 8px;        /* esquinas suaves */
+          font-size: 14px;
+          cursor: pointer;
+          transition: background 0.2s ease; /* animación suave */
+        }
+
+        #teodio:hover {
+          background-color: #626262; /* un poco más claro al pasar */
+        }
+        </style>
         
         <h3>Streak no peleas</h3>
         <label for="inicio">Inicio:</label>
         <input type="date" id="inicio">
         <button id="guardar">Guardar fecha</button>
+
+        <style>
+        #inicio {
+          background-color: #ffffff;  /* gris oscuro */
+          color: #000000;            /* texto blanco */
+          padding: 10px 18px;
+          border: 1.5px solid #393939;
+          border-radius: 8px;        /* esquinas suaves */
+          font-size: 14px;
+          cursor: pointer;
+          transition: background 0.2s ease; /* animación suave */
+        }
+
+        #inicio:hover {
+          background-color: #e0e0e0; /* un poco más claro al pasar */
+        }
+        </style>
+
+        <style>
+        #guardar {
+          background-color: #393939;  /* gris oscuro */
+          color: #ffffff;            /* texto blanco */
+          padding: 10px 18px;
+          border: none;
+          border-radius: 8px;        /* esquinas suaves */
+          font-size: 14px;
+          cursor: pointer;
+          transition: background 0.2s ease; /* animación suave */
+        }
+
+        #guardar:hover {
+          background-color: #626262; /* un poco más claro al pasar */
+        }
+        </style>
 
         <p>Streak: <span id="racha">0</span> días</p>
 
@@ -181,6 +231,4 @@
 
 
     </body>
-
 </html>
-
